@@ -31,11 +31,13 @@ keymap('n', 'gx', '<cmd>lua vim.api.nvim_command("split") vim.lsp.buf.definition
 keymap('n', 'gv', '<cmd>lua vim.api.nvim_command("vsplit") vim.lsp.buf.definition()<CR>', opts)
 keymap('n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
 keymap('n', 'gi', '<cmd>lua vim.lsp.buf.implementation()<CR>', opts)
-keymap('n', 'gk', '<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', opts)
+keymap('n', 'gk', '<cmd>lua vim.diagnostic.open_float(0, { scope = "line", border = "single" })<CR>', opts)
 keymap('n', 'gp', '<cmd>lua vim.lsp.diagnostic.goto_prev()<CR>', opts)
 keymap('n', 'gn', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
 keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
 keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
+
+keymap('n', '<leader>gb', '<cmd>Gitsigns blame_line<CR>', opts)
 
 keymap("n", "<leader>t", "<cmd>NvimTreeToggle<cr>", opts)
 

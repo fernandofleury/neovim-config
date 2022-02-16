@@ -99,6 +99,12 @@ return packer.startup(function(use)
   }
 
   use {
+    'lewis6991/gitsigns.nvim',
+    requires = 'nvim-lua/plenary.nvim',
+    config = "require('gitsigns').setup()"
+  }
+
+  use {
     'catppuccin/nvim',
     config = "vim.cmd('colorscheme catppuccin')"
   }
