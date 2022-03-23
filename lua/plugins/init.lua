@@ -105,6 +105,11 @@ return packer.startup(function(use)
   }
 
   use {
+    "folke/which-key.nvim",
+    config = "require('which-key').setup()"
+  }
+
+  use {
     'catppuccin/nvim',
     config = "vim.cmd('colorscheme catppuccin')"
   }

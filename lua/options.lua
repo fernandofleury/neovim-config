@@ -11,6 +11,8 @@ vim.cmd [[
 
   set completeopt=menu,menuone,noselect
 
+  set clipboard=unnamed
+
   set shortmess+=c
 
   set laststatus=2

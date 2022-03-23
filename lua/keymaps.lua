@@ -2,6 +2,8 @@ local opts = { noremap = true, silent = true }
 
 local keymap = vim.api.nvim_set_keymap
 
+keymap("n", "<leader>y", "+y", opts)
+
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)
 keymap("n", "<C-Down>", ":resize +2<CR>", opts)
 keymap("n", "<C-Left>", ":vertical resize -2<CR>", opts)
@@ -37,7 +39,9 @@ keymap('n', 'gn', '<cmd>lua vim.lsp.diagnostic.goto_next()<CR>', opts)
 keymap('n', '<leader>rn', '<cmd>lua vim.lsp.buf.rename()<CR>', opts)
 keymap('n', 'K', '<cmd>lua vim.lsp.buf.hover()<CR>', opts)
 
-keymap('n', '<leader>gb', '<cmd>Gitsigns blame_line<CR>', opts)
+keymap('n', 'hb', '<cmd>Gitsigns blame_line<CR>', opts)
+keymap('n', 'hd', '<cmd>Gitsigns diffthis<CR>', opts)
+keymap('n', 'hh', '<cmd>Gitsigns preview_hunk<CR>', opts)
 
 keymap("n", "<leader>t", "<cmd>NvimTreeToggle<cr>", opts)
 
