@@ -18,6 +18,7 @@ keymap("n", "<leader>ft", "<cmd>:Neoformat<cr>", opts)
 
 keymap("n", "<leader>ff", "<cmd>Telescope git_files<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fr", "<cmd>Telescope lsp_document_symbols<cr>", opts)
 keymap("n", "<leader>fp", "<cmd>Telescope project<cr>", opts)
 keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 keymap("n", "<Leader>fc", "<cmd>Telescope git_status<cr>", opts)
