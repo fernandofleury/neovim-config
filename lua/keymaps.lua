@@ -44,5 +44,5 @@ keymap('n', 'hb', '<cmd>Gitsigns blame_line<CR>', opts)
 keymap('n', 'hd', '<cmd>Gitsigns diffthis<CR>', opts)
 keymap('n', 'hh', '<cmd>Gitsigns preview_hunk<CR>', opts)
 
-keymap("n", "<leader>t", "<cmd>NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>tt", "<cmd>NvimTreeToggle<cr>", opts)
 
