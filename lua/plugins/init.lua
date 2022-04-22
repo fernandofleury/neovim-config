@@ -70,8 +70,6 @@ return packer.startup(function(use)
     'nvim-telescope/telescope-fzf-native.nvim', run = 'make'
   }
 
-  use 'nvim-telescope/telescope-project.nvim'
-
   use {
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate',
@@ -81,6 +79,11 @@ return packer.startup(function(use)
   use {
     'akinsho/toggleterm.nvim',
     config = "require('plugins.toggleterm')"
+  }
+
+  use {
+    'alvarosevilla95/luatab.nvim',
+    config = "require('plugins.luatab')"
   }
 
   use 'tpope/vim-fugitive'
@@ -105,7 +108,7 @@ return packer.startup(function(use)
   }
 
   use {
-    "folke/which-key.nvim",
+    'folke/which-key.nvim',
     config = "require('which-key').setup()"
   }
 
