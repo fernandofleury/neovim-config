@@ -83,6 +83,7 @@ return packer.startup(function(use)
 
   use {
     'alvarosevilla95/luatab.nvim',
+    requires = 'kyazdani42/nvim-web-devicons',
     config = "require('plugins.luatab')"
   }
 
@@ -93,8 +94,10 @@ return packer.startup(function(use)
 
   use 'editorconfig/editorconfig-vim'
   use 'christoomey/vim-tmux-navigator'
-  use 'easymotion/vim-easymotion'
+  -- use 'easymotion/vim-easymotion'
   use 'norcalli/nvim-colorizer.lua'
+
+  use 'ggandor/lightspeed.nvim'
 
   use {
     'lukas-reineke/indent-blankline.nvim',
