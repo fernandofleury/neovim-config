@@ -88,13 +88,12 @@ return packer.startup(function(use)
   }
 
   use 'tpope/vim-fugitive'
-  use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
+  use 'tpope/vim-commentary'
   use 'tpope/vim-sleuth'
 
   use 'editorconfig/editorconfig-vim'
   use 'christoomey/vim-tmux-navigator'
-  -- use 'easymotion/vim-easymotion'
   use 'norcalli/nvim-colorizer.lua'
 
   use 'ggandor/lightspeed.nvim'
@@ -113,6 +112,11 @@ return packer.startup(function(use)
   use {
     'folke/which-key.nvim',
     config = "require('which-key').setup()"
+  }
+
+  use {
+    'goolord/alpha-nvim',
+    config = "require('plugins.dashboard')"
   }
 
   use {

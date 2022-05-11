@@ -1,3 +1,3 @@
 local luatab = require('luatab')
 
-luatab.setup {}
+luatab.setup()
