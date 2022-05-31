@@ -40,7 +40,10 @@ return packer.startup(function(use)
     config = "require('plugins.lsp-installer')"
   }
 
-  use 'sbdchd/neoformat'
+  use {
+    'sbdchd/neoformat',
+    config = "vim.g.neoformat_try_node_exe=1"
+  }
 
   use {
     'hrsh7th/cmp-nvim-lsp',
